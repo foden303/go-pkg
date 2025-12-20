@@ -292,7 +292,7 @@ func (rb *Buffer) Available() int {
 
 // WriteString writes the contents of the string s to buffer, which accepts a slice of bytes.
 func (rb *Buffer) WriteString(s string) (int, error) {
-	return rb.Write(bs.StringToBytes(s))
+	return rb.Write(bs.String2Bytes(s))
 }
 
 // Bytes returns all available read bytes. It does not move the read pointer and only copy the available data.
