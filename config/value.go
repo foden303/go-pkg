@@ -3,7 +3,7 @@ package config
 import (
 	"encoding/json"
 	"fmt"
-	pkgjson "go-pkg/encoding/json"
+	pkgJson "go-pkg/encoding/json"
 	"reflect"
 	"strconv"
 	"sync/atomic"
@@ -211,7 +211,7 @@ func (v *atomicValue) Scan(obj any) error {
 		return err
 	}
 	if pb, ok := obj.(proto.Message); ok {
-		return pkgjson.UnmarshalOptions.Unmarshal(data, pb)
+		return pkgJson.UnmarshalOptions.Unmarshal(data, pb)
 	}
 	return json.Unmarshal(data, obj)
 }

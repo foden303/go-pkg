@@ -44,6 +44,7 @@ func (c codec) Marshal(v any) ([]byte, error) {
 	}
 }
 
+// Unmarshal un-marshals data into v from JSON format.
 func (c codec) Unmarshal(data []byte, v any) error {
 	switch m := v.(type) {
 	case proto.Message:

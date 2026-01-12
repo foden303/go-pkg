@@ -21,6 +21,14 @@ require (
 )
 
 require (
+	github.com/klauspost/reedsolomon v1.12.6 // indirect
+	github.com/templexxx/cpufeat v0.0.0-20180724012125-cef66df7f161 // indirect
+	github.com/templexxx/xor v0.0.0-20191217153810-f85b25db303b // indirect
+	github.com/tjfoc/gmsm v1.4.1 // indirect
+	golang.org/x/time v0.14.0 // indirect
+)
+
+require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bits-and-blooms/bitset v1.24.2 // indirect
 	github.com/bytedance/gopkg v0.1.3 // indirect
@@ -68,6 +76,8 @@ require (
 	github.com/stretchr/objx v0.5.3 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.3.1 // indirect
+	github.com/xtaci/kcp-go v5.4.20+incompatible
+	github.com/xtaci/kcp-go/v5 v5.6.61
 	go.uber.org/mock v0.6.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.3 // indirect

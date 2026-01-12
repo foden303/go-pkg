@@ -12,14 +12,14 @@ type Codec interface {
 var registeredCodecs = make(map[string]Codec)
 
 // RegisterCodec registers a codec with the given name.
-func RegisterCodec(c Codec) {
+func RegisterCodec(codec Codec) {
 	if codec == nil {
 		panic("cannot register a nil Codec")
 	}
 	if codec.Name() == "" {
 		panic("cannot register Codec with empty string result for Name()")
 	}
-	registeredCodecs[strings.ToLower(codec.Name())] = c
+	registeredCodecs[strings.ToLower(codec.Name())] = codec
 }
 
 // GetCodec retrieves a registered codec by name.
